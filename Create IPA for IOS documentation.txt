@@ -1,0 +1,29 @@
+Steps - IPA file Create  for IOS in xcode 
+1. https://www.browserstack.com/docs/app-automate/appium/references/ipa-creation
+2 . go to product -> archive if you have tried some time then first fall clean build folder
+3.  archive your ios build 
+if signin option popout to select - this option which i mention below 
+team - Institute of Electrical and Electronics Engineers INC 
+bundle indentifier -  oeg.ieee.mobile.mcoe.ieee
+signing certificate - apple developement with apple user.
+
+after signin with your appstore developer account and fill password mac user password and 
+select always allow 
+* if your mac password not working to go keychain access and check in  login option go to login option to check certificate to mention in xcode and aslo check developer  id certificate authority if it is same as xcode certificate no need to reset keychains
+if not same reset keychains and after restore your keychains using keychains db when add a new keychain if not working  then restart your mac check again same' or goto xcode a try to login  and select always allow option and enter password.
+
+after archive done. 
+
+4. got to export/distribute app 
+choose developemt option if your signing certificate apple devlopment/ as mention 3 point
+
+after choose option - 
+5. These Distribution options should be set:
+App Thinning: None.(no change)
+Strip Swift symbols is optional.(no need)
+Clear the selection Include manifest for over-the-air installation. (no need to select)
+
+6. after this  another window switch - 
+re-sign so select default / automatically manage signing go to next and 
+new window popup for summary and export so select your path to save your IPA file 
+

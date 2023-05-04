@@ -1,0 +1,67 @@
+This document for global search API how to intrigate and how to get a response
+this API provided by IEEE developer 
+
+we have 4 API for global search this is resposible for get a response with category 
+\\\\\\\\\\\\\\\\
+This API for News and Media
+
+https://iybk7gl1n8.execute-api.us-east-1.amazonaws.com/v1/global-search/getnews?page=3&limit=20
+
+METHOD -  POST  
+body - {
+	"query":"computer"}
+
+No Authentication Required 
+default parameter pass by Backend 
+Page and limit 
+
+in this API we can get a data both of type Media and news together 
+
+
+This API for magazines 
+https://iybk7gl1n8.execute-api.us-east-1.amazonaws.com/v1/global-search/getmagazine?page=1&limit=20
+
+
+METHOD -  POST  
+body - {
+	"query":"computer"}
+
+No Authentication Required 
+default parameter pass by Backend 
+Page and limit 
+
+
+in this API we can get a data only for magazine which is publishred by IEEE
+
+
+This API for People
+https://iybk7gl1n8.execute-api.us-east-1.amazonaws.com/v1/global-search/getpeople?page=1&limit=20
+
+METHOD -  POST  
+body - {
+	"query":"computer"}
+
+No Authentication Required 
+default parameter pass by Backend 
+Page and limit 
+
+in this API we will get a response only for people which is exist on IEEE database and search
+
+https://iybk7gl1n8.execute-api.us-east-1.amazonaws.com/v1/global-search/getevents?page=1&limit=20
+
+
+METHOD -  POST  
+body - {
+	"query":"computer"}
+
+No Authentication Required 
+default parameter pass by Backend 
+Page and limit 
+
+in this api this will give a response only events who oraganized by the IEEE 
+
+
+
+You can test this API using a postman tool for testing a backend API 
+ 
+
